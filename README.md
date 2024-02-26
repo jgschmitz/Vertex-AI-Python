@@ -20,4 +20,12 @@ Run gcloud config list.
 Run gcloud projects list.
 See the support page: https://support.google.com/googleapi/answer/7014113
 
+So basically once the above i installed you should be able to use this
 
+```
+Python 3.11.7 (main, Dec  4 2023, 18:10:11) [Clang 15.0.0 (clang-1500.1.0.2.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from google.cloud import aiplatform
+>>> import vertexai.preview
+>>> your code here ......
+```
