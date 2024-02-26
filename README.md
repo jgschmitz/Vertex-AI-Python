@@ -16,27 +16,26 @@ This tutorial demonstrates how to use the Vertex AI Python client library to tra
 
 ## Steps
 
-### 1. Set Up MongoDB Atlas
+###  Set Up MongoDB Atlas
 
 1. Create a MongoDB Atlas account if you don't have one.
 2. Set up a cluster and a database to store your data. Note down the connection string.
 
-### 2. Prepare Data in MongoDB
+###  Prepare Data in MongoDB
 
 1. Ensure your data in MongoDB is appropriately structured for classification.
 2. Convert MongoDB data into a format suitable for training. You might need to use Python scripts to fetch and preprocess data.
 
-### 3. Install Vertex AI Python Client Library
+### Install Vertex AI Python Client Library
 
 ```
 pip install google-cloud-aiplatform
 ```
-
-4. Authenticate with Google Cloud
+### Authenticate with Google Cloud
 ```
 gcloud auth login
 ```
-5. Create a Vertex AI Model Training Job
+### Create a Vertex AI Model Training Job
 ```
 gcloud aiplatform jobs custom-job create \
     --display-name="classification-job" \
@@ -46,11 +45,12 @@ gcloud aiplatform jobs custom-job create \
     --region="your_region" \
     --master-image-uri="gcr.io/cloud-aiplatform/training/tf-cpu.2-8:latest"
 ```
-6. Train a Classification Model
+
+### Train a Classification Model
 Use the Vertex AI Python client library to initiate classification training. Adapt your code to fetch data from MongoDB.
 Ensure your model handles non-tabular data appropriately.
 
-Deploy the Model Resource to a Serving Endpoint Resource
+### Deploy the Model Resource to a Serving Endpoint Resource
 ```
 gcloud aiplatform models deploy "your_model_name" \
     --region="your_region" \
@@ -61,10 +61,10 @@ gcloud aiplatform models deploy "your_model_name" \
     --model-uri="your_model_uri"
 ```
 
-9. Make a Prediction by Sending Data
+### Make a Prediction by Sending Data
 Use the deployed model's endpoint to send data from MongoDB for prediction.
 Adapt your code to retrieve data from MongoDB instead of Google Cloud Storage.
-10. Undeploy the Model Resource
+ Undeploy the Model Resource
 ```
 gcloud aiplatform models undeploy "your_model_name" --region="your_region"
 ```
