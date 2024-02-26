@@ -26,15 +26,16 @@ This tutorial demonstrates how to use the Vertex AI Python client library to tra
 
 ### 3. Install Vertex AI Python Client Library
 
-```bash
+```
 pip install google-cloud-aiplatform
+```
+
 4. Authenticate with Google Cloud
-bash
-Copy code
+```
 gcloud auth login
+```
 5. Create a Vertex AI Model Training Job
-bash
-Copy code
+```
 gcloud aiplatform jobs custom-job create \
     --display-name="classification-job" \
     --python-package-path="your_package_path" \
@@ -42,12 +43,13 @@ gcloud aiplatform jobs custom-job create \
     --runtime-version=2.8 \
     --region="your_region" \
     --master-image-uri="gcr.io/cloud-aiplatform/training/tf-cpu.2-8:latest"
+```
 6. Train a Classification Model
 Use the Vertex AI Python client library to initiate classification training. Adapt your code to fetch data from MongoDB.
 Ensure your model handles non-tabular data appropriately.
-7. Deploy the Model Resource to a Serving Endpoint Resource
-bash
-Copy code
+
+Deploy the Model Resource to a Serving Endpoint Resource
+```
 gcloud aiplatform models deploy "your_model_name" \
     --region="your_region" \
     --display-name="your_display_name" \
@@ -55,17 +57,15 @@ gcloud aiplatform models deploy "your_model_name" \
     --python-version="3.7" \
     --runtime-version="2.8" \
     --model-uri="your_model_uri"
-8. Make a Prediction by Sending Data
+```
+
+9. Make a Prediction by Sending Data
 Use the deployed model's endpoint to send data from MongoDB for prediction.
 Adapt your code to retrieve data from MongoDB instead of Google Cloud Storage.
-9. Undeploy the Model Resource
-bash
-Copy code
+10. Undeploy the Model Resource
+```
 gcloud aiplatform models undeploy "your_model_name" --region="your_region"
-Conclusion
+```
 Congratulations! You have successfully trained, deployed, and tested a classification model using Vertex AI with MongoDB Atlas as your data source.
-
-vbnet
-Copy code
 
 Replace placeholders like "your_package_path," "your_module_name," etc., with your actual information. Adapt the data retrieval and preprocessing steps according to your MongoDB data structure.
