@@ -1,4 +1,4 @@
-##Using MongoDB Atlas with Vertex AI for Classification
+## Using MongoDB Atlas with Vertex AI for Classification
 
 ## Objective
 
