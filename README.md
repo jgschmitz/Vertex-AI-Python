@@ -1,6 +1,6 @@
 ## Using MongoDB Atlas with Vertex AI for Classification
 
-<img src="https://miro.medium.com/v2/resize:fit:578/1*r-iod_ZxZQLy_dFoay52cA.png"alt="Huggingface Logo" width="300">
+<img src="https://miro.medium.com/v2/resize:fit:578/1*r-iod_ZxZQLy_dFoay52cA.png"alt="Vertex AI Logo" width="300">
 
 ## Objective
 
