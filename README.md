@@ -16,14 +16,6 @@ This tutorial demonstrates how to use the Vertex AI Python client library to tra
 
 ## Steps
 
-So after the above is installed you should be able to do this
-```
-Python 3.11.7 (main, Dec  4 2023, 18:10:11) [Clang 15.0.0 (clang-1500.1.0.2.5)] on darwin
-Type "help", "copyright", "credits" or "license" for more information.
->>> from google.cloud import aiplatform
->>> import vertexai.preview
-```
-
 ###  Set Up MongoDB Atlas
 
 1. Create a MongoDB Atlas account if you don't have one.
@@ -38,6 +30,13 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 ```
 pip install google-cloud-aiplatform
+```
+So after the above is installed you should be able to do this
+```
+Python 3.11.7 (main, Dec  4 2023, 18:10:11) [Clang 15.0.0 (clang-1500.1.0.2.5)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> from google.cloud import aiplatform
+>>> import vertexai.preview
 ```
 ### Authenticate with Google Cloud
 ```
