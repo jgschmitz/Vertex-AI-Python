@@ -1,7 +1,5 @@
 ## Using MongoDB Atlas with Vertex AI for Classification
 
-<img src="https://miro.medium.com/v2/resize:fit:578/1*r-iod_ZxZQLy_dFoay52cA.png" alt="vertex Logo" width="300">
-
 ## Objective
 
 This tutorial demonstrates how to use the Vertex AI Python client library to train and deploy a classification model for online prediction, where the data is stored in MongoDB Atlas.
