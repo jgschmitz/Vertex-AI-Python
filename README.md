@@ -10,7 +10,7 @@ This tutorial demonstrates how to use the Vertex AI Python client library to tra
 
 - [Google Cloud SDK](https://cloud.google.com/sdk/docs/install)
 - [MongoDB Atlas account](https://www.mongodb.com/cloud/atlas)
-- Python and relevant libraries installed
+- Make sure Python and relevant libraries installed
 
 ## Steps
 
